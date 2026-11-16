@@ -4,7 +4,7 @@
 
 sound.json (all optional except "duration" when timeline_map.json does not exist yet):
   {"duration": 801.6,                       # timeline length; default: from timeline_map.json
-   "music": "D:/.../track.wav",             # default: assets/music/default_bed.wav (add your own)
+   "music": "D:/.../track.wav",             # default: the kit's assets/music/default_bed.wav
    "under_db": 18,                          # music level under the (gained) voice
    "voice_gain_db": "auto",                 # the gain buildproj.py puts on the voice
    "mute":  [[144.35, 281.05]],             # no music here (a sponsor read that has its own)
@@ -34,7 +34,7 @@ T = cfg.get("duration") or json.loads(tm.read_text())["duration"]
 MUS = cfg.get("music") or str(_kit.KIT / "assets" / "music" / "default_bed.wav")
 if not Path(MUS).exists():
     raise SystemExit(f"no music file at {MUS}: set \"music\" in sound.json, or put your own licensed track at "
-                     "assets/music/default_bed.wav in the skill folder (it is not shipped with the skill)")
+                     "assets/music/default_bed.wav in the skill folder")
 OUTD = ROOT / cfg.get("out_dir", "audio"); OUTD.mkdir(parents=True, exist_ok=True)
 
 

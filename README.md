@@ -4,7 +4,7 @@ A Claude Code skill: the fast pipeline for editing a long-form YouTube video fro
 
 ## Install (once per PC)
 
-You need Git, Claude Code and VibezCut installed.
+You need Git, Claude Code and VibezCut installed, and an invite to this private repository.
 
 1. Open a terminal and run:
 
@@ -19,8 +19,8 @@ git clone https://github.com/zainulabedeen123/tmg-yt-skill.git "%USERPROFILE%/.c
 
 For motion graphics and Shorts you also need the `hyperframes` and `effects` skills.
 
-Music is not included (it is licensed per person). Put your own licensed track at
-`assets/music/default_bed.wav` inside the skill folder, or give a music file in the stage 2 prompt.
+The default music track is included at `assets/music/default_bed.wav`. It is a licensed track for this
+channel's videos only: do not share the file or use it elsewhere.
 
 ## Update (whenever the skill changes)
 

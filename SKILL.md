@@ -15,7 +15,7 @@ render, 3 = thumbnail and metadata, 4 = the Short. With no stage given, ask whic
 If a needed field is empty, ask for all missing fields in one message.
 
 ## Updating
-This folder is a git checkout of `github.com/zainulabedeen123/tmg-yt-skill` (public: never commit licensed music, footage, client files or anything private). When the user says "update
+This folder is a git checkout of `github.com/zainulabedeen123/tmg-yt-skill` (private, shared with the channel's editors. It holds a licensed music track, so it must stay private: if it is ever made public, remove `assets/music/*.wav` from the repo and its history first). When the user says "update
 yourself" or "update the skill": `git -C KIT pull`, then say what changed (`git log -3 --oneline`). When the owner
 asks to change the skill, edit the files here, commit and `git push` so the editors get it.
 
@@ -97,7 +97,7 @@ Steps:
    that lands: whoosh, impact, pop, a riser into the title.
    The `/effects` skill is for vertical face video: use it in the Short, not here.
 5. Sound: `PY audio.py "<video>" sound.json` -> `audio/music_bed.wav` + `audio/sfx.wav` (music 18 dB under the voice,
-   lower under screen share, subtle SFX on layout changes). Default music is `KIT/assets/music/default_bed.wav`, which is NOT in the repository (licensed per person): if it is missing, ask the user for a music file.
+   lower under screen share, subtle SFX on layout changes). Default music is `KIT/assets/music/default_bed.wav` (licensed for this channel's videos only; never send the file anywhere else).
 6. Rebuild the project with overlays and audio in `project.json`.
 7. Captions last: `studio_captions` on the open project. Default: karaoke box in lime (#c6f432), current word
    highlighted, drop shadow, clear of graphics and face. Pass product-name `corrections`.

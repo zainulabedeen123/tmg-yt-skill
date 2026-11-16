@@ -1,5 +1,3 @@
 python.txt
 __pycache__/
 *.pyc
-assets/music/*
-!assets/music/README.md
