@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+<style>
+:root{--ink:#f4f5fb;--mute:#a3a8c0;--violet2:#b3a8ff;--cyan:#43d3ff;--amber:#ffc35a;--green:#3fe0a0;--red:#ff5d73}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#05060a}
+#root{position:relative;width:1080px;height:1920px;font-family:Inter;color:var(--ink);overflow:hidden}
+.abs{position:absolute}
+.bgfill{left:0;top:0;width:1080px;height:1920px;background:radial-gradient(900px 700px at 20% 15%,rgba(123,108,255,.35),transparent 60%),radial-gradient(800px 700px at 85% 85%,rgba(67,211,255,.18),transparent 60%),linear-gradient(170deg,#0b0c16,#05060a)}
+.grid{left:0;top:0;width:1080px;height:1920px;background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);background-size:60px 60px}
+.full{left:-852px;top:354px;width:2784px;height:1566px;-webkit-mask-image:linear-gradient(to bottom,transparent 0,#000 140px);mask-image:linear-gradient(to bottom,transparent 0,#000 140px)}
+.blurbg{left:0;top:0;width:1080px;height:1920px}
+.cut{left:-516px;top:732px;width:2112px;height:1188px;z-index:5}
+.panel{left:0;top:0;width:1080px;height:1000px;overflow:hidden;border-bottom:3px solid rgba(179,168,255,.55)}
+.kick{font:700 30px "JetBrains Mono";letter-spacing:.16em;text-transform:uppercase;color:var(--violet2)}
+.big{font-weight:900;letter-spacing:-.045em;line-height:.95}
+.grad{background:linear-gradient(90deg,#d6d0ff,#7b6cff 55%,#43d3ff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.card{background:rgba(18,19,30,.82);border:1px solid rgba(255,255,255,.12);border-radius:30px;box-shadow:0 30px 80px rgba(0,0,0,.5)}
+.tile{width:110px;height:110px;border-radius:28px;background:#fff;display:flex;align-items:center;justify-content:center;flex:none}
+.tile img{width:70px;height:70px}
+.mono{font-family:"JetBrains Mono";font-weight:800}
+.chip{display:inline-flex;padding:16px 30px;border-radius:999px;font-weight:800;font-size:38px}
+.dt{width:440px;height:248px;border-radius:22px;overflow:hidden;border:2px solid rgba(179,168,255,.45)}
+.dt video{position:absolute;left:0;top:0;width:440px;height:248px;object-fit:cover}
+#box{left:80px;top:250px;width:440px;height:560px;border-radius:36px;overflow:hidden;border:4px solid rgba(179,168,255,.9);box-shadow:0 0 50px rgba(123,108,255,.5)}
+</style>
+</head>
+<body>
+<div id="root" data-composition-id="main" data-start="0" data-duration="45.7" data-width="1080" data-height="1920">
+
+  <!-- background for split/box layouts -->
+  <div id="bg" class="abs bgfill clip" data-start="0" data-duration="45.7" data-track-index="0"><div class="abs grid"></div></div>
+
+  <!-- A full -->
+  <video id="bvA" class="abs blurbg clip" src="assets/src_blur.mp4" muted data-start="0" data-duration="6.583" data-media-start="0" data-track-index="6"></video>
+  <video id="vA" class="abs full clip" src="assets/src.mp4" muted data-start="0" data-duration="6.583" data-media-start="0" data-track-index="1"></video>
+
+  <!-- B split: specs -->
+  <div id="pB" class="abs panel clip" data-start="6.583" data-duration="7.95" data-track-index="2">
+    <div class="abs bgfill" style="height:1000px"></div>
+    <div class="abs" style="left:80px;top:250px;width:860px">
+      <div class="row" style="display:flex;gap:24px;align-items:center"><div class="tile b1"><img src="assets/icons/qwen-color.svg"></div><div class="kick b2">Qwen4-Max · specs</div></div>
+      <div class="big b3" style="font-size:230px;margin-top:20px"><span class="grad">1M</span></div>
+      <div class="b4" style="font-size:46px;font-weight:700;color:var(--mute);margin-top:-6px">token context window</div>
+      <div class="card b5" style="margin-top:34px;padding:26px 34px;display:flex;gap:34px">
+        <div><div style="font-size:30px;color:var(--mute)">Input / 1M</div><div class="mono" style="font-size:76px">$1.50</div></div>
+        <div><div style="font-size:30px;color:var(--mute)">Output / 1M</div><div class="mono" style="font-size:76px">$4.50</div></div>
+      </div>
+    </div>
+  </div>
+  <video id="cB" class="abs cut clip" src="assets/speaker_cut.webm" muted data-start="6.583" data-duration="7.95" data-media-start="6.583" data-track-index="3"></video>
+
+  <!-- C full -->
+  <video id="bvC" class="abs blurbg clip" src="assets/src_blur.mp4" muted data-start="14.533" data-duration="6.767" data-media-start="14.533" data-track-index="6"></video>
+  <video id="vC" class="abs full clip" src="assets/src.mp4" muted data-start="14.533" data-duration="6.767" data-media-start="14.533" data-track-index="1"></video>
+
+  <!-- D split: demos -->
+  <div id="pD" class="abs panel clip" data-start="21.3" data-duration="3.683" data-track-index="2">
+    <div class="abs bgfill" style="height:1000px"></div>
+    <div class="abs kick d0" style="left:80px;top:240px">My own coding tests</div>
+  </div>
+    <div class="abs dt dtw d1" style="opacity:0;z-index:4;left:80px;top:310px"><video class="clip" src="assets/demos/d1.mp4" muted data-start="21.3" data-duration="3.683" data-track-index="10"></video></div>
+    <div class="abs dt dtw d2" style="opacity:0;z-index:4;left:560px;top:310px"><video class="clip" src="assets/demos/d2.mp4" muted data-start="21.3" data-duration="3.683" data-track-index="11"></video></div>
+    <div class="abs dt dtw d3" style="opacity:0;z-index:4;left:80px;top:588px"><video class="clip" src="assets/demos/d4.mp4" muted data-start="21.3" data-duration="3.683" data-track-index="12"></video></div>
+    <div class="abs dt dtw d4" style="opacity:0;z-index:4;left:560px;top:588px"><video class="clip" src="assets/demos/d5.mp4" muted data-start="21.3" data-duration="3.683" data-track-index="13"></video></div>
+  <video id="cD" class="abs cut clip" src="assets/speaker_cut.webm" muted data-start="21.3" data-duration="3.683" data-media-start="21.3" data-track-index="3"></video>
+
+  <!-- E/F full -->
+  <video id="bvE" class="abs blurbg clip" src="assets/src_blur.mp4" muted data-start="24.983" data-duration="9.834" data-media-start="24.983" data-track-index="6"></video>
+  <video id="vE" class="abs full clip" src="assets/src.mp4" muted data-start="24.983" data-duration="9.834" data-media-start="24.983" data-track-index="1"></video>
+
+  <!-- G box: Vals -->
+  <div id="pG" class="abs clip" style="left:0;top:0;width:1080px;height:1920px" data-start="34.817" data-duration="7.933" data-track-index="2">
+    <div class="abs kick g1" style="left:80px;top:870px">Independent test · Vals AI Index</div>
+    <div class="abs g2" style="left:72px;top:910px;display:flex;align-items:flex-end;gap:26px"><div class="big grad" style="font-size:300px">#11</div><div style="font-size:60px;font-weight:900;color:var(--mute);margin-bottom:46px;line-height:1.05">of 38<br>models</div></div>
+    <div class="abs g3" style="left:80px;top:1240px"><span class="chip" style="background:rgba(63,224,160,.14);border:2px solid rgba(63,224,160,.55);color:#a6f6d4">Best Chinese model right now</span></div>
+    <div class="abs g4" style="left:570px;top:300px;width:420px"><div class="card" style="padding:28px 30px"><div class="tile" style="width:90px;height:90px"><img src="assets/icons/qwen-color.svg" style="width:58px;height:58px"></div><div style="font-size:44px;font-weight:900;margin-top:20px">Qwen4-Max</div><div style="font-size:30px;color:var(--mute);margin-top:6px">Vals Index 63.2%</div></div></div>
+  </div>
+  <div id="box" class="abs" style="opacity:0">
+    <video class="abs clip" src="assets/src.mp4" muted data-start="34.817" data-duration="7.933" data-media-start="34.817" data-track-index="5" style="left:-484px;top:-20px;width:1408px;height:792px"></video>
+  </div>
+
+  <!-- H full -->
+  <video id="bvH" class="abs blurbg clip" src="assets/src_blur.mp4" muted data-start="42.75" data-duration="2.95" data-media-start="42.75" data-track-index="6"></video>
+  <video id="vH" class="abs full clip" src="assets/src.mp4" muted data-start="42.75" data-duration="2.95" data-media-start="42.75" data-track-index="1"></video>
+</div>
+<script>
+const tl = gsap.timeline({ paused: true });
+function inn(sel,t,o){ tl.from(sel, Object.assign({opacity:0, y:50, duration:0.5, ease:"power3.out"}, o||{}), t); }
+// B
+tl.from("#pB", {yPercent:-100, duration:0.5, ease:"power3.out"}, 6.583);
+tl.from("#cB", {y:400, duration:0.55, ease:"power3.out"}, 6.583);
+inn(".b1",6.9,{scale:.6,y:0,ease:"back.out(2)"}); inn(".b2",7.0); inn(".b3",7.2,{scale:.7,y:0,ease:"back.out(1.6)"}); inn(".b4",7.6); inn(".b5",9.2);
+// D
+tl.from("#pD", {yPercent:-100, duration:0.45, ease:"power3.out"}, 21.3);
+tl.from("#cD", {y:400, duration:0.5, ease:"power3.out"}, 21.3);
+inn(".d0",21.5); tl.fromTo(".dtw", {opacity:0, scale:.6}, {opacity:1, scale:1, duration:0.45, stagger:0.1, ease:"back.out(1.6)"}, 21.55); tl.set(".dtw",{opacity:0},24.98);
+// G
+tl.fromTo("#box", {opacity:0, scale:.6}, {opacity:1, scale:1, duration:0.5, ease:"back.out(1.5)"}, 34.817); tl.set("#box",{opacity:0},42.749);
+inn(".g4",35.0,{x:60,y:0}); inn(".g1",35.6); inn(".g2",35.75,{scale:.7,y:0,ease:"back.out(1.6)"}); inn(".g3",38.8,{scale:.8,y:0,ease:"back.out(2)"});
+window.__timelines["main"] = tl;
+tl.seek(0);
+</script>
+</body>
+</html>

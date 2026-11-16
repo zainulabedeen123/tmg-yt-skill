@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1920, height=1080" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+<style>
+__CSS__
+</style>
+</head>
+<body>
+<div id="root" data-composition-id="main" data-start="0" data-duration="34.26" data-width="1920" data-height="1080">
+  <div id="bg" class="abs clip" data-start="0" data-duration="34.26" data-track-index="0"><div id="grid" class="abs"></div></div>
+  <div id="cam" class="abs"><video id="spk" class="abs clip" src="assets/outro.mp4" muted data-start="0" data-duration="34.26" data-track-index="1"></video></div>
+  <div id="ringC" class="abs ring clip" style="left:1503px;top:673px;width:314px;height:314px" data-start="0" data-duration="34.26" data-track-index="2"></div>
+  <div id="frameR" class="abs frame clip" style="left:960px;top:24px;width:912px;height:1032px;border-radius:28px" data-start="0" data-duration="34.26" data-track-index="3"></div>
+  <div id="frameS" class="abs frame clip" style="left:140px;top:81px;width:720px;height:684px;border-radius:32px" data-start="0" data-duration="34.26" data-track-index="4"></div>
+
+  <div id="o1" class="abs scene clip" data-start="0.6" data-duration="7.7" data-track-index="10">
+    <div class="abs" style="left:110px;top:250px;width:800px">
+      <div class="row o1a"><div class="tile"><img src="assets/icons/qwen-color.svg"></div></div>
+      <div class="kick o1b" style="margin-top:46px">The verdict</div>
+      <div class="h2 o1c" style="margin-top:16px">Is Qwen4-Max <span class="grad">worth using?</span></div>
+      <div class="card o1d" style="margin-top:40px;padding:28px 36px"><div class="h3">Not the best model in the world</div><div class="sub" style="margin-top:8px">Alibaba's own numbers show that</div></div>
+    </div>
+  </div>
+
+  <div id="o2" class="abs scene clip" data-start="8.6" data-duration="5.4" data-track-index="11">
+    <div class="abs" style="left:110px;top:260px;width:820px">
+      <div class="kick o2a" style="color:var(--green)">But…</div>
+      <div class="o2b" style="margin-top:30px"><span class="chip">Close to the top models on coding</span></div>
+      <div class="o2c" style="margin-top:22px"><span class="chip">Much lower price</span></div>
+      <div class="o2d" style="margin-top:22px"><span class="chip">1M-token context window</span></div>
+    </div>
+  </div>
+
+  <div id="o3" class="abs scene clip" data-start="14.3" data-duration="10.0" data-track-index="12">
+    <div class="abs row" style="left:150px;top:180px;gap:48px;align-items:stretch">
+      <div class="card o3a" style="width:640px;padding:44px 48px;border-color:rgba(63,224,160,.4)">
+        <div class="kick" style="color:var(--green)">Try it if you</div>
+        <div class="h3 o3b" style="margin-top:34px">✓ Run long coding agents</div>
+        <div class="h3 o3c" style="margin-top:26px">✓ Care about cost</div>
+      </div>
+      <div class="card o3d" style="width:640px;padding:44px 48px;border-color:rgba(255,93,115,.4)">
+        <div class="kick" style="color:var(--red)">Others still lead on</div>
+        <div class="h3 o3e" style="margin-top:34px">✕ Terminal automation</div>
+        <div class="h3 o3f" style="margin-top:26px">✕ Strong vision</div>
+      </div>
+    </div>
+  </div>
+
+  <div id="o4" class="abs scene clip" data-start="24.5" data-duration="3.0" data-track-index="13">
+    <div class="abs h1 o4a" style="left:150px;top:300px;width:1400px;font-size:96px">It doesn't beat the frontier.</div>
+    <div class="abs h1 o4b grad" style="left:150px;top:430px;width:1400px;font-size:132px">It undercuts it.</div>
+  </div>
+
+  <div id="lt1" class="abs lt clip" data-start="27.9" data-duration="2.6" data-track-index="14"><div class="acc"></div><div><div class="kick" style="font-size:20px">Qwen4-Max · per 1M tokens</div><div class="h3">$1.50 input · $4.50 output</div></div></div>
+  <div id="lt2" class="abs lt clip" data-start="30.9" data-duration="3.3" data-track-index="15"><div class="acc"></div><div><div class="kick" style="font-size:20px">Questions?</div><div class="h3">Leave them in the comments</div></div></div>
+</div>
+<script>
+__JSLIB__
+cam("split", 0.4);
+inn(".o1a .tile", 0.8, {scale:.6, y:0, ease:"back.out(1.8)"}); inn(".o1b", 1.0); inn(".o1c", 1.15); inn(".o1d", 4.2);
+outScene("#o1 > div", 7.95);
+inn(".o2a", 8.7); inn(".o2b", 8.9, {x:-40, y:0}); inn(".o2c", 10.8, {x:-40, y:0}); inn(".o2d", 12.3, {x:-40, y:0});
+outScene("#o2 > div", 13.65);
+cam("circle", 14.0);
+inn(".o3a", 14.5); inn(".o3b", 15.6, {x:-30, y:0}); inn(".o3c", 17.2, {x:-30, y:0});
+inn(".o3d", 19.0); inn(".o3e", 20.4, {x:-30, y:0}); inn(".o3f", 21.6, {x:-30, y:0});
+outScene("#o3 > div", 23.95);
+inn(".o4a", 24.55, {y:50}); inn(".o4b", 25.7, {scale:.85, y:0, ease:"back.out(1.6)"});
+outScene("#o4 > div", 27.15);
+cam("full", 27.3);
+inn("#lt1 > *", 27.9, {x:-30, y:0, stagger:.08}); outScene("#lt1 > *", 30.15);
+inn("#lt2 > *", 30.9, {x:-30, y:0, stagger:.08}); outScene("#lt2 > *", 33.85);
+window.__timelines["main"] = tl;
+tl.seek(0);
+</script>
+</body>
+</html>

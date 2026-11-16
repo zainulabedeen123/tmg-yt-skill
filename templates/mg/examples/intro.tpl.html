@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1920, height=1080" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+<style>
+__CSS__
+</style>
+</head>
+<body>
+<div id="root" data-composition-id="main" data-start="0" data-duration="144.36" data-width="1920" data-height="1080">
+
+  <div id="bg" class="abs clip" data-start="0" data-duration="144.36" data-track-index="0"><div id="grid" class="abs"></div></div>
+  <div id="cam" class="abs"><video id="spk" class="abs clip" src="assets/intro.mp4" muted data-start="0" data-duration="144.36" data-track-index="1"></video></div>
+  <div id="ringC" class="abs ring clip" style="left:1503px;top:673px;width:314px;height:314px" data-start="0" data-duration="144.36" data-track-index="2"></div>
+  <div id="frameR" class="abs frame clip" style="left:960px;top:24px;width:912px;height:1032px;border-radius:28px" data-start="0" data-duration="144.36" data-track-index="3"></div>
+  <div id="frameS" class="abs frame clip" style="left:140px;top:81px;width:720px;height:684px;border-radius:32px" data-start="0" data-duration="144.36" data-track-index="4"></div>
+
+  <div id="mont" class="abs clip" style="left:0;top:0;width:1920px;height:1080px;z-index:7" data-start="0" data-duration="6.5" data-track-index="9">
+    <div class="abs" style="left:0;top:0;width:1920px;height:1080px;background:radial-gradient(1100px 600px at 20% 10%,rgba(123,108,255,.3),transparent 60%),linear-gradient(160deg,#0a0b14,#05060a)"></div>
+    <div id="mgrid" class="abs" style="left:0;top:0;width:1920px;height:1080px;transform-origin:960px 540px">
+    <div class="abs kick mk" style="left:68px;top:120px">Qwen4-Max · real coding tests</div>
+    <div class="abs mt" id="mt1" style="left:68px;top:202px;width:576px;height:324px;border-radius:22px;overflow:hidden;border:2px solid rgba(179,168,255,.35);box-shadow:0 24px 60px rgba(0,0,0,.55)"><video id="dv1" class="abs clip" src="assets/demos/d1.mp4" muted data-start="0" data-duration="6.5" data-track-index="41" style="left:0;top:0;width:576px;height:324px;object-fit:cover"></video></div>
+    <div class="abs mt" id="mt2" style="left:672px;top:202px;width:576px;height:324px;border-radius:22px;overflow:hidden;border:2px solid rgba(179,168,255,.35);box-shadow:0 24px 60px rgba(0,0,0,.55)"><video id="dv2" class="abs clip" src="assets/demos/d2.mp4" muted data-start="0" data-duration="6.5" data-track-index="42" style="left:0;top:0;width:576px;height:324px;object-fit:cover"></video></div>
+    <div class="abs mt" id="mt3" style="left:1276px;top:202px;width:576px;height:324px;border-radius:22px;overflow:hidden;border:2px solid rgba(179,168,255,.35);box-shadow:0 24px 60px rgba(0,0,0,.55)"><video id="dv3" class="abs clip" src="assets/demos/d3.mp4" muted data-start="0" data-duration="6.5" data-track-index="43" style="left:0;top:0;width:576px;height:324px;object-fit:cover"></video></div>
+    <div class="abs mt" id="mt4" style="left:68px;top:554px;width:576px;height:324px;border-radius:22px;overflow:hidden;border:2px solid rgba(179,168,255,.35);box-shadow:0 24px 60px rgba(0,0,0,.55)"><video id="dv4" class="abs clip" src="assets/demos/d4.mp4" muted data-start="0" data-duration="6.5" data-track-index="44" style="left:0;top:0;width:576px;height:324px;object-fit:cover"></video></div>
+    <div class="abs mt" id="mt5" style="left:672px;top:554px;width:576px;height:324px;border-radius:22px;overflow:hidden;border:2px solid rgba(179,168,255,.35);box-shadow:0 24px 60px rgba(0,0,0,.55)"><video id="dv5" class="abs clip" src="assets/demos/d5.mp4" muted data-start="0" data-duration="6.5" data-track-index="45" style="left:0;top:0;width:576px;height:324px;object-fit:cover"></video></div>
+    <div class="abs card mt" id="mt6" style="left:1276px;top:554px;width:576px;height:324px;padding:34px 38px;border-color:rgba(179,168,255,.45)">
+      <div class="row" style="gap:16px"><div class="tile sm"><img src="assets/icons/alibaba-color.svg"></div><div class="tile sm"><img src="assets/icons/qwen-color.svg"></div></div>
+      <div class="h2" style="margin-top:22px;font-size:64px">Qwen<span class="grad">4-Max</span></div>
+      <div class="row" style="margin-top:8px;gap:16px"><div class="stat grad" style="font-size:64px"><span id="c24">0.0</span>T</div><div class="sub" style="font-size:28px">parameters</div></div>
+    </div>
+    </div>
+  </div>
+  <div id="s2" class="abs scene clip" data-start="6.6" data-duration="7.8" data-track-index="11">
+    <div class="abs" style="left:110px;top:200px;width:800px">
+      <div class="kick s2a">The spec sheet</div>
+      <div class="card s2b" style="margin-top:30px;padding:34px 40px"><div class="sub">Context window</div><div class="stat"><span id="c1m">0</span> <span class="grad" style="font-size:56px">tokens</span></div></div>
+      <div class="row" style="margin-top:26px;gap:26px">
+        <div class="card s2c" style="padding:30px 36px;width:387px"><div class="sub">Input / 1M</div><div class="stat" style="font-size:80px">$1.50</div></div>
+        <div class="card s2d" style="padding:30px 36px;width:387px"><div class="sub">Output / 1M</div><div class="stat" style="font-size:80px">$4.50</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="s3" class="abs scene clip" data-start="14.6" data-duration="6.6" data-track-index="12">
+    <div class="abs kick s3a" style="left:150px;top:150px">Alibaba's claim · agentic coding</div>
+    <div class="abs h2 s3b" style="left:150px;top:210px;width:1500px">Qwen4-Max <span class="grad">beats</span></div>
+    <div class="abs row" style="left:150px;top:420px;gap:40px">
+      <div class="card row s3c" style="padding:34px 44px;gap:28px"><div class="tile"><img src="assets/icons/claude-color.svg"></div><div><div class="h3">Claude</div><div class="h2">Opus 5.5</div></div></div>
+      <div class="card row s3d" style="padding:34px 44px;gap:28px"><div class="tile"><img src="assets/icons/openai.svg"></div><div><div class="h3">OpenAI</div><div class="h2">GPT-6.1 Sol</div></div></div>
+    </div>
+    <div class="abs s3e" style="left:150px;top:700px"><span class="chip" style="font-size:30px">Source: Alibaba's launch benchmarks</span></div>
+  </div>
+
+  <div id="lt1" class="abs lt clip" data-start="21.5" data-duration="3.4" data-track-index="13"><div class="acc"></div><div><div class="kick" style="font-size:20px">Hands-on</div><div class="h3">I ran my own coding tests</div></div></div>
+
+  <div id="s4" class="abs scene clip" data-start="27.4" data-duration="7.1" data-track-index="14">
+    <div class="abs" style="left:960px;top:230px;width:840px">
+      <div class="kick s4a">What is it?</div>
+      <div class="h2 s4b" style="margin-top:20px">First model of the <span class="grad">Qwen4 family</span></div>
+      <div class="row s4c" style="margin-top:46px"><span class="chip">New architecture</span></div>
+      <div class="row s4d" style="margin-top:20px"><span class="chip" style="background:rgba(255,93,115,.12);border-color:rgba(255,93,115,.4);text-decoration:line-through;color:#ffb3be">Not an update of the old one</span></div>
+    </div>
+  </div>
+
+  <div id="s5" class="abs scene clip" data-start="34.7" data-duration="9.6" data-track-index="15">
+    <div class="abs kick s5a" style="left:150px;top:120px">Sparse mixture-of-experts</div>
+    <div class="abs h2 s5b" style="left:150px;top:176px;width:1400px">2.4T total · only <span class="grad">71B active</span> per token</div>
+    <div id="dots" class="abs s5c" style="left:150px;top:350px;width:1200px;display:grid;grid-template-columns:repeat(40,14px);gap:16px 16.6px">__DOTS__</div>
+    <div class="abs h3 s5d" style="left:150px;top:880px;color:var(--cyan)">≈3% of the model works on each token → big model, low price</div>
+  </div>
+
+  <div id="s6" class="abs scene clip" data-start="44.6" data-duration="8.4" data-track-index="16">
+    <div class="abs" style="left:110px;top:210px;width:800px">
+      <div class="kick s6a">What it can do</div>
+      <div class="row s6b" style="margin-top:34px;gap:18px"><span class="chip">Text</span><span class="chip">Images</span><span class="chip">Native vision</span></div>
+      <div class="card s6c" style="margin-top:30px;padding:30px 40px"><div class="sub">Max output</div><div class="stat"><span id="c262">0</span>K <span class="grad" style="font-size:56px">tokens</span></div></div>
+      <div class="card s6d" style="margin-top:26px;padding:30px 40px"><div class="sub">Reasoning effort</div>
+        <div style="position:relative;margin-top:24px;height:16px;border-radius:8px;background:rgba(255,255,255,.1)"><div id="eff" style="position:absolute;left:0;top:0;height:16px;width:720px;border-radius:8px;background:linear-gradient(90deg,#7b6cff,#43d3ff);transform-origin:0 50%;transform:scaleX(.15)"></div></div>
+        <div class="row" style="justify-content:space-between;margin-top:14px;font:700 26px var(--font-mono);color:var(--mute)"><span>LOW</span><span>HIGH</span><span style="color:var(--cyan)">XHIGH</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="s7" class="abs scene clip" data-start="54.6" data-duration="9.7" data-track-index="17">
+    <div class="abs" style="left:960px;top:230px;width:840px">
+      <div class="kick s7a" style="color:var(--amber)">Important</div>
+      <div class="row s7b" style="margin-top:22px;gap:26px"><svg width="96" height="96" viewBox="0 0 24 24" fill="none" stroke="#ffc35a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg><div class="h2">Closed weights</div></div>
+      <div class="card s7c" style="margin-top:40px;padding:30px 38px"><div class="h3">Smaller Qwen4 models → <span class="grad">open source</span></div><div class="sub" style="margin-top:10px">Release date: not announced yet</div></div>
+    </div>
+  </div>
+
+  <div id="s8" class="abs scene clip" data-start="64.8" data-duration="19.4" data-track-index="18">
+    <div class="abs kick s8a" style="left:150px;top:110px">Benchmark · DeepSWE v1.1</div>
+    <div class="abs h2 s8b" style="left:150px;top:164px">Agentic coding in real repos</div>
+    <div class="abs deep" style="left:150px;top:330px;width:1240px">__BARS_DEEP__</div>
+    <div id="tie" class="abs" style="left:1000px;top:150px;transform:rotate(-6deg);padding:14px 30px;border:5px solid var(--amber);border-radius:16px;font:900 56px var(--font-display);color:var(--amber);letter-spacing:.04em">TIE AT THE TOP</div>
+  </div>
+
+  <div id="s9" class="abs scene clip" data-start="84.5" data-duration="12.8" data-track-index="19">
+    <div class="abs kick s9a" style="left:150px;top:110px;color:var(--green)">Its real win · long tasks</div>
+    <div class="abs h2 s9b" style="left:150px;top:164px">Agents' Last Exam v1.1</div>
+    <div class="abs ale" style="left:150px;top:360px;width:1240px">__BARS_ALE__</div>
+  </div>
+
+  <div id="s10" class="abs scene clip" data-start="97.6" data-duration="11.8" data-track-index="20">
+    <div class="abs kick s10a" style="left:150px;top:110px;color:var(--red)">Not best at everything</div>
+    <div class="abs" style="left:150px;top:190px;width:1240px">
+      <div class="h3 s10b">Terminal-Bench 4.0</div>
+      <div class="tb" style="margin-top:22px">__BARS_TB__</div>
+      <div class="h3 s10c" style="margin-top:50px">ProgramBench</div>
+      <div class="pb" style="margin-top:22px">__BARS_PB__</div>
+    </div>
+  </div>
+
+  <div id="s11" class="abs scene clip" data-start="109.7" data-duration="7.3" data-track-index="21">
+    <div class="abs" style="left:110px;top:250px;width:800px">
+      <div class="card row s11a" style="padding:34px 40px;gap:30px"><div class="stat" style="color:var(--amber)">#3</div><div><div class="h3">Web development</div><div class="sub">CodeArena</div></div></div>
+      <div class="card s11b" style="margin-top:28px;padding:34px 40px"><div class="h3">Charts &amp; video understanding</div><div class="row" style="margin-top:20px;gap:16px"><div class="sub">behind</div><span class="chip" style="font-size:28px">GPT-6 Astra</span><span class="chip" style="font-size:28px">Opus 5.5</span></div></div>
+    </div>
+  </div>
+
+  <div id="s12" class="abs scene clip" data-start="117.4" data-duration="7.3" data-track-index="22">
+    <div class="abs" style="left:960px;top:200px;width:840px">
+      <div class="kick s12a">Alibaba's 16 benchmarks</div>
+      <div class="row s12b" style="margin-top:30px;gap:40px">
+        <svg width="260" height="260" viewBox="0 0 260 260"><defs><linearGradient id="gq"><stop offset="0" stop-color="#b3a8ff"/><stop offset="1" stop-color="#43d3ff"/></linearGradient></defs><circle cx="130" cy="130" r="112" stroke="rgba(255,255,255,.1)" stroke-width="22" fill="none"/><circle id="arc" cx="130" cy="130" r="112" stroke="url(#gq)" stroke-width="22" fill="none" stroke-linecap="round" stroke-dasharray="703.7" stroke-dashoffset="703.7" transform="rotate(-90 130 130)"/><text x="130" y="152" text-anchor="middle" font-family="JetBrains Mono" font-weight="800" font-size="64" fill="#f4f5fb">5/16</text></svg>
+        <div class="h3" style="width:440px">benchmarks led outright</div>
+      </div>
+      <div class="card s12c" style="margin-top:34px;padding:28px 36px"><div class="h3">Beats <span class="grad">Qwen3.8-Max</span> on all 16</div></div>
+    </div>
+  </div>
+
+  <div id="s13" class="abs scene clip" data-start="125.0" data-duration="11.9" data-track-index="23">
+    <div class="abs s13a" style="left:150px;top:120px"><span class="chip" style="background:rgba(255,195,90,.12);border-color:rgba(255,195,90,.45);color:var(--amber)">⚠ Those were Alibaba's own numbers</span></div>
+    <div class="abs kick s13b" style="left:150px;top:290px">Independent testing · Vals AI Index</div>
+    <div class="abs row s13c" style="left:150px;top:330px;gap:36px"><div class="stat grad" style="font-size:220px">#<span id="c11">38</span></div><div class="h2" style="color:var(--mute)">of 38<br/>models</div></div>
+    <div class="abs row" style="left:150px;top:690px;gap:22px">
+      <span class="chip s13d" style="background:rgba(63,224,160,.12);border-color:rgba(63,224,160,.45);color:#9ff5d1">Best Chinese model right now</span>
+      <span class="chip s13e" style="background:rgba(255,93,115,.12);border-color:rgba(255,93,115,.45);color:#ffb3be">Not the best overall</span>
+    </div>
+  </div>
+
+  <div id="lt2" class="abs lt clip" data-start="137.4" data-duration="4.2" data-track-index="24"><div class="acc"></div><div><div class="kick" style="font-size:20px">Coming up</div><div class="h3">My own coding tests</div></div></div>
+  <div id="lt3" class="abs lt clip" data-start="142.0" data-duration="2.3" data-track-index="25"><div class="acc"></div><div class="h3">Today's sponsor</div></div>
+</div>
+<script>
+__JSLIB__
+// MONTAGE
+tl.from(".mk", {opacity:0, y:20, duration:0.4}, 0.1);
+tl.from("#mont .mt", {opacity:0, scale:0.7, y:60, duration:0.6, ease:"back.out(1.5)", stagger:0.12}, 0.05);
+tl.fromTo("#mgrid", {scale:1}, {scale:1.06, duration:6.3, ease:"none"}, 0);
+count("c24", 2.4, 1.2, 1.4, 1);
+tl.to("#mont .mt", {borderColor:"rgba(67,211,255,.9)", duration:0.15, stagger:{each:0.35, yoyo:true, repeat:1}}, 2.6);
+tl.to("#mont .mt", {opacity:0, scale:0.85, y:-40, duration:0.4, ease:"power2.in", stagger:0.05}, 5.95);
+tl.to("#mont > div:first-child", {opacity:0, duration:0.4}, 6.05);
+cam("split", 5.6, 0.6);
+// S2
+inn(".s2a", 6.7); inn(".s2b", 6.85); count("c1m", 1000000, 6.9, 1.6);
+inn(".s2c", 9.0); inn(".s2d", 11.2);
+outScene("#s2 > div", 14.05);
+// S3
+cam("circle", 14.4);
+inn(".s3a", 14.8); inn(".s3b", 14.95, {y:60});
+inn(".s3c", 16.2, {x:-40, y:0}); inn(".s3d", 17.5, {x:-40, y:0}); inn(".s3e", 18.8);
+outScene("#s3 > div", 20.85);
+cam("full", 21.0);
+inn("#lt1 > *", 21.5, {x:-30, y:0, stagger:.08}); outScene("#lt1 > *", 24.55);
+tl.to("#spk", {scale:1.12, duration:2.0, ease:"power2.out", transformOrigin:"50% 35%"}, 25.0);
+tl.to("#spk", {scale:1, duration:0.6, ease:"power3.inOut"}, 27.0);
+// S4
+cam("square", 27.2);
+inn(".s4a", 27.6); inn(".s4b", 27.75); inn(".s4c", 30.6, {scale:.8, y:0, ease:"back.out(2)"}); inn(".s4d", 32.0, {scale:.8, y:0, ease:"back.out(2)"});
+outScene("#s4 > div", 34.15);
+// S5
+cam("circle", 34.5);
+inn(".s5a", 34.9); inn(".s5b", 35.05);
+tl.from("#dots .dot", {opacity:0, scale:0, duration:0.25, stagger:{each:0.004, from:"random"}}, 35.4);
+tl.to("#dots .dot.on", {backgroundColor:"#43d3ff", boxShadow:"0 0 14px #43d3ff", duration:0.3, stagger:0.06}, 38.6);
+tl.to("#dots .dot.off", {opacity:0.35, duration:0.6}, 38.6);
+inn(".s5d", 41.0);
+outScene("#s5 > div", 43.95);
+// S6
+cam("split", 44.3);
+inn(".s6a", 44.8); inn(".s6b .chip", 45.0, {scale:.8, y:0, stagger:.15, ease:"back.out(2)"});
+inn(".s6c", 46.6); count("c262", 262, 46.8, 1.4);
+inn(".s6d", 50.2); tl.fromTo("#eff", {scaleX:.15}, {scaleX:1, duration:1.6, ease:"power2.inOut"}, 51.0);
+outScene("#s6 > div", 52.65);
+cam("full", 52.9);
+// S7
+cam("square", 54.4);
+inn(".s7a", 54.9); inn(".s7b", 55.05); inn(".s7c", 57.9);
+outScene("#s7 > div", 63.95);
+// S8
+cam("circle", 64.5);
+inn(".s8a", 64.9); inn(".s8b", 65.05); bars("deep", 70.6);
+tl.from("#tie", {opacity:0, scale:2.2, duration:0.45, ease:"back.out(1.6)"}, 82.0);
+outScene("#s8 > div", 83.85);
+// S9
+inn(".s9a", 84.6); inn(".s9b", 84.75); bars("ale", 89.0);
+outScene("#s9 > div", 96.95);
+// S10
+inn(".s10a", 97.7); inn(".s10b", 98.4); bars("tb", 98.8); inn(".s10c", 103.4); bars("pb", 103.8);
+outScene("#s10 > div", 109.05);
+// S11
+cam("split", 109.4);
+inn(".s11a", 109.9); inn(".s11b", 112.2);
+outScene("#s11 > div", 116.65);
+// S12
+cam("square", 117.1);
+inn(".s12a", 117.6); inn(".s12b", 117.8);
+tl.fromTo("#arc", {strokeDashoffset:703.7}, {strokeDashoffset:703.7*(1-5/16), duration:1.4, ease:"power2.out"}, 118.1);
+inn(".s12c", 121.0);
+outScene("#s12 > div", 124.35);
+// S13
+cam("circle", 124.7);
+inn(".s13a", 125.1); inn(".s13b", 127.2); inn(".s13c", 127.4);
+count("c11", 11, 127.6, 1.8, 0, 38);
+inn(".s13d", 129.9, {scale:.8, y:0, ease:"back.out(2)"}); inn(".s13e", 133.9, {scale:.8, y:0, ease:"back.out(2)"});
+outScene("#s13 > div", 136.55);
+cam("full", 136.75);
+inn("#lt2 > *", 137.4, {x:-30, y:0, stagger:.08}); outScene("#lt2 > *", 141.25);
+inn("#lt3 > *", 142.0, {x:-30, y:0, stagger:.08}); outScene("#lt3 > *", 143.95);
+window.__timelines["main"] = tl;
+tl.seek(0);
+</script>
+</body>
+</html>
